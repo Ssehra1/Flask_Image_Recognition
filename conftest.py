@@ -7,3 +7,4 @@ from app import app  # This imports the Flask app for testing
 def client():
     with app.test_client() as client:
         yield client
+
