@@ -1,6 +1,6 @@
 # Hand Digit Image Recognition
 
-This web app is made using Flask framework and is all about predicting the hand sign digit images based on the deep learning model trained using transfer learning.
+This web app is made using Flask framework and we are testing and is all about predicting the hand sign digit images based on the deep learning model trained using transfer learning.
 
 ![Python](https://img.shields.io/badge/python-8338ec)
 ![Keras](https://img.shields.io/badge/keras-219ebc)
