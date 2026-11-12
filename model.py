@@ -7,7 +7,6 @@ from PIL import Image
 # Loading model
 model = load_model("digit_model.h5")
 
-
 # Preparing and pre-processing the image
 def preprocess_img(img_path):
     op_img = Image.open(img_path)
