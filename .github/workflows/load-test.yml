@@ -1,0 +1,22 @@
+name: Locust Load Test
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch: # manual trigger
+
+jobs:
+  load-test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Locust Load Test
+        uses: apardo04/locust-github-action@master
+        with:
+          URL: ${{ secrets.APP_URL }}   # required
+          LOCUSTFILE: "locustfile.py"
+          REQUIREMENTS: "requirements.txt"  # optional
+          USERS: "50"
+          RATE: "10"
+          RUNTIME: "5m"
